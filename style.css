@@ -1,74 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --font1: 'Raleway', sans-serif;
     --font2: 'Mochiy Pop One', sans-serif;
 }
 
-header{
-    display:flex;
-    background-color: aqua;
+header {
+    display: flex;
+    background-color: #fbfbfb;
     width: 100%;
     height: 80px;
-
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-.posicionamento_header{
+.grid{
+    width: 80%;
+    margin: auto;
+}
+
+.posicionamento_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;    
+   
 }
 
-.posicionamento-menu a{
+.posicionamento-menu a {
     color: black;
     text-decoration: none;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
 }
 
-.posicionamento-menu .link_cadastrar{
+.posicionamento-menu .link_cadastrar {
     color: #ff6e22;
 }
 
 
 
-/*SEÇÕES*/
+/*SEÇAO 1*/
 
-.secao-1{
-    background-color: #ff6e22;
+.secao-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 400px; */
+    justify-content: space-between;
 }
 
-.secao-1-bloco{
-    background-color: blue;
+.secao-1-bloco {
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
-.secao-1-bloco2{
-    background-color: blueviolet;
+.secao-1-bloco2 {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font1);
+    width: 50%;
+
+}
+
+.secao-1-bloco2 h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 85px;
+}
+
+.secao-1-bloco2 p {
+    font-size: 22px;
+}
+
+.secao-1-bloco2 a {
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fbfbfb;
+    text-decoration: none;
+    background-color: #ff9922;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.secao_imagem {
+    width: 49%;
+}
+
+
+/*SECAO2*/
+.secao-2{
+    background-color: #ff9922;
+}
+
+.secao-2 span{
     font-family: var(--font1);
     font-weight: 700;
-    text-align: justify;
-    font-weight: 500;
+    font-size: 46px;
+    text-align: center;
+}
+
+.secao-2-bloco{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-2-encontre-pet{
     font-family: var(--font1);
-}
-
-.secao-1-imagem{
-    background-color: chartreuse;
-    align-items: center;
-    justify-content: space-between
-}
-
-.secao-1-img{
+    font-weight: 500;
+    font-size: 22px;
 }
